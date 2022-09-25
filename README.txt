@@ -16,7 +16,7 @@ Markdown support through template filter
 
 Custom template tags
 
-Post retrieval bt tag similarity
+Post retrieval by tag similarity
 
 Tagging functionality
 
