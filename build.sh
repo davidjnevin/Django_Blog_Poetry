@@ -6,4 +6,4 @@ set -o errexit
 
 poetry install
 
-python manage.py migrate
+poetry run python manage.py migrate

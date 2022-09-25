@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sample_blog"
+name = "mysite"
 version = "0.1.0"
 description = "Demo App Project built using Django4 by Example by Antonio Mele"
 authors = ["David J Nevin <content@davidjnevin.com>"]
