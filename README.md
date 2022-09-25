@@ -29,4 +29,4 @@ Pagination
 Canonical URL's
 
 
-Built using __Django4 by Example__ written by Antonio Mele
+Built using [_Django4 by Example_](https://github.com/PacktPublishing/Django-4-by-example) written by Antonio Melé
