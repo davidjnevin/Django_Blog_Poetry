@@ -1,0 +1,39 @@
+{% extends "blog/base.html" %}
+
+{%block content%}
+
+<main>
+  <div class="container py-4">
+
+    <div class="p-5 mb-4 bg-warning rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">PRODUCT LISTING APP</h1>
+            <p class="col-md-8 fs-4">Product listing APP built in Django 4.1, using built-in user authentication and authorization system.</p>
+            <button class="btn btn-dark btn-lg" type="button"><a class="text-light" href="{% url 'blog:post_list' %}">Explore </a></button>
+        </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+                <h2>Uses Filters</h2>
+                <p>Using filters, the listings can be searched and filtered.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark border rounded-3">
+                <h2>Images are stored and served using an AWS S3 Bucket.</h2>
+                <p>All images are uploaded for demonstration purposes only.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+        © DavidJNevin 2022 For more info please contact <a href="https://www.linkedin.com/in/davidnevin/">David J Nevin</a>
+    </footer>
+
+  </div>
+</main>
+
+{%endblock content%}
+

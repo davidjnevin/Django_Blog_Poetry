@@ -1,0 +1,63 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+{% load static %}
+
+{% block title %}Search{% endblock %}
+{% block content %}
+<!-- Page Header-->
+<header class="masthead" style="background-image: url(https://picsum.photos/1186/790?blur=2)">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="post-heading">
+                  <h1>Search</h1>
+                  <h2 class="subheading">
+                    {% if query %}
+                    Posts containing "{{ query }}"
+                    {% endif %}
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- Post Content-->
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            {% if query %}
+
+            <h3>
+              {% with results.count as total_results %}
+                Found {{ total_results }} result{{ total_results|pluralize }}
+            {% endwith %}
+
+            <!-- Divider-->
+            <hr class="my-4" />
+            </h3>
+            {% for post in results %}
+              <h4>
+                <a href="{{ post.get_absolute_url }}">
+                  {{ post.title }}
+                </a>
+              </h4>
+              {{ post.body|markdown|truncatewords_html:12 }}
+
+            <!-- Divider-->
+            <hr class="my-4" />
+            {% empty %}
+              <p>There are no results for your query.</p>
+            {% endfor %}
+            <p><a href="{% url 'blog:post_search' %}">Search again</a></p>
+          {% else %}
+            <form method="get">
+              {{ form.as_p }}
+              <input type="submit" value="Search">
+            </form>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+</article>
+
+{% endblock %}
