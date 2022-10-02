@@ -1,4 +1,4 @@
-# Django #
+# django #
 *.log
 *.pot
 *.pyc
@@ -6,51 +6,51 @@ __pycache__
 db.sqlite3
 media
 
-# Backup files #
+# backup files #
 *.bak
 
-# If you are using PyCharm #
-# User-specific stuff
+# if you are using pycharm #
+# user-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
 
-# AWS User-specific
+# aws user-specific
 .idea/**/aws.xml
 
-# Generated files
-.idea/**/contentModel.xml
+# generated files
+.idea/**/contentmodel.xml
 
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
+# sensitive or high-churn files
+.idea/**/datasources/
+.idea/**/datasources.ids
+.idea/**/datasources.local.xml
+.idea/**/sqldatasources.xml
 .idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
+.idea/**/uidesigner.xml
 .idea/**/dbnavigator.xml
 
-# Gradle
+# gradle
 .idea/**/gradle.xml
 .idea/**/libraries
 
-# File-based project format
+# file-based project format
 *.iws
 
-# IntelliJ
+# intellij
 out/
 
-# JIRA plugin
+# jira plugin
 atlassian-ide-plugin.xml
 
-# Python #
+# python #
 *.py[cod]
 *$py.class
 
-# Distribution / packaging
-.Python build/
+# distribution / packaging
+.python build/
 develop-eggs/
 dist/
 downloads/
@@ -68,11 +68,11 @@ wheels/
 *.manifest
 *.spec
 
-# Installer logs
+# installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# unit test / coverage reports
 htmlcov/
 .tox/
 .coverage
@@ -84,7 +84,7 @@ coverage.xml
 *.cover
 .hypothesis/
 
-# Jupyter Notebook
+# jupyter notebook
 .ipynb_checkpoints
 
 # pyenv
@@ -93,15 +93,15 @@ coverage.xml
 # celery
 celerybeat-schedule.*
 
-# SageMath parsed files
+# sagemath parsed files
 *.sage.py
 
-# Environments
+# environments
 .env
 .venv
 env/
 venv/
-ENV/
+env/
 env.bak/
 venv.bak/
 
@@ -111,24 +111,24 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# Sublime Text #
+# sublime text #
 *.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
+*.tmpreferences.cache
+*.sttheme.cache
 *.sublime-workspace
 *.sublime-project
 
 # sftp configuration file
 sftp-config.json
 
-# Package control specific files Package
-Control.last-run
-Control.ca-list
-Control.ca-bundle
-Control.system-ca-bundle
-GitHub.sublime-settings
+# package control specific files package
+control.last-run
+control.ca-list
+control.ca-bundle
+control.system-ca-bundle
+github.sublime-settings
 
-# Visual Studio Code #
+# visual studio code #
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
